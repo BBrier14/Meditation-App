@@ -17,6 +17,15 @@ const app = () => {
 	outline.style.strokeDasharray = outlineLength;
 	outline.style.strokeDashoffset = outlineLength;
 
+	//Play different sounds
+	sounds.forEach((sound) => {
+		sound.addEventListener('click', function() {
+			song.src = this.getAttribute('data-sound');
+			video.src = this.getAttribute('data-video');
+			checkPlaying(song);
+		});
+	});
+
 	//Play Music
 	play.addEventListener('click', () => {
 		checkPlaying(song);
