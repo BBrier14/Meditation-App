@@ -1,4 +1,5 @@
 # Meditation-App
+https://bbrier14.github.io/Meditation-App/
 ## Overview
 The Meditation App is a vanilla Javascript application that allows the user choose the music and amount of time they would like to meditate. 
 ## How it Works
